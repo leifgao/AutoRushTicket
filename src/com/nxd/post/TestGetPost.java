@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class TestGetPost
 {
-	//发�?Get请求
+	//发送get请求
 	public static String sendGet(String url,String param)
 	{
 		String result = "";
@@ -37,7 +37,7 @@ public class TestGetPost
 			}
 		} catch (Exception e)
 		{
-			System.out.println("发�?get请求失败"+e);
+			System.out.println("发送get请求失败"+e);
 		} finally
 		{
 			try
@@ -54,7 +54,7 @@ public class TestGetPost
 		return result;
 	}
 	
-	//发�?post请求
+	//发送post请求
 	public static String sendPost(String url,String param)
 	{
 		PrintWriter out = null;
@@ -84,7 +84,7 @@ public class TestGetPost
 			
 		} catch (Exception e)
 		{
-			System.out.println("发�?post请求失败"+e);
+			System.out.println("发送post请求失败"+e);
 			e.printStackTrace();
 		} finally
 		{
